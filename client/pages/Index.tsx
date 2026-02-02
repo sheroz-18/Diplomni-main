@@ -21,7 +21,8 @@ export default function Index() {
                 Тарҷумаи Тоҷикӣ
               </h1>
               <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
-                Тарҷумаи фавритавӣ, луғати ҷомеъ ва ёрии ҳушманд барои забони тоҷикӣ
+                Тарҷумаи фавритавӣ, луғати ҷомеъ ва ёрии ҳушманд барои забони
+                тоҷикӣ
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <Link
@@ -62,14 +63,22 @@ export default function Index() {
                   {/* Text in banner */}
                   <div className="text-center">
                     <p className="text-sm text-blue-100 mb-2">Дастрас барои</p>
-                    <p className="text-2xl font-bold text-white mb-3">10+ забон</p>
+                    <p className="text-2xl font-bold text-white mb-3">
+                      10+ забон
+                    </p>
                     <div className="w-32 h-1 bg-gradient-to-r from-purple-400 via-pink-400 to-green-400 rounded-full mx-auto" />
                   </div>
                 </div>
 
                 {/* Floating elements */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 bg-purple-400 rounded-lg opacity-20 animate-bounce" style={{animationDelay: '0s'}} />
-                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-pink-400 rounded-full opacity-20 animate-bounce" style={{animationDelay: '0.5s'}} />
+                <div
+                  className="absolute -top-4 -right-4 w-20 h-20 bg-purple-400 rounded-lg opacity-20 animate-bounce"
+                  style={{ animationDelay: "0s" }}
+                />
+                <div
+                  className="absolute -bottom-4 -left-4 w-16 h-16 bg-pink-400 rounded-full opacity-20 animate-bounce"
+                  style={{ animationDelay: "0.5s" }}
+                />
               </div>
             </div>
           </div>
@@ -156,7 +165,9 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
-              <p className="text-gray-700 font-medium">Забонҳои пуштибонишуда</p>
+              <p className="text-gray-700 font-medium">
+                Забонҳои пуштибонишуда
+              </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-green-600 mb-2">100%</div>
@@ -204,7 +215,8 @@ export default function Index() {
             <div>
               <h3 className="text-white font-bold mb-4">Оид ба мо</h3>
               <p className="text-sm">
-                Тарҷумаи Тоҷикӣ як платформаи тарҷума ва омӯзиши забони тез ва осон аст, ки барои ҳамаи дӯстдоронидагони тоҷик сохта шудааст.
+                Тарҷумаи Тоҷикӣ як платформаи тарҷума ва омӯзиши забони тез ва
+                осон аст, ки барои ҳамаи дӯстдоронидагони тоҷик сохта шудааст.
               </p>
             </div>
             <div>

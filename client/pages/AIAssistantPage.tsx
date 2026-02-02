@@ -12,7 +12,7 @@ interface Message {
 }
 
 const AI_RESPONSES: Record<string, string> = {
-  "салом": "Салом! Ман ёрии тарҷума ҳастам. Чӣ гуна метавонам кумак кунам?",
+  салом: "Салом! Ман ёрии тарҷума ҳастам. Чӣ гуна метавонам кумак кунам?",
   "салом алейкум":
     "Алейкум ассалому ва раҳмату-ллӣ! Бисёр хушҳолам, ки шумо дар ин ҷо ҳастед.",
   "номи ту чист":
@@ -21,7 +21,7 @@ const AI_RESPONSES: Record<string, string> = {
     "Барои тарҷума: 1. Ба саҳифаи 'Тарҷума кун' равед 2. Матни худро дар қуттии сеҳ бишинед 3. Забонҳои манбаъ ва мақсадро интихоб кунед 4. Ба дугмаи 'Тарҷума кун' зер кунед",
   "луғат чист":
     "Луғати мо шомили таъриифот, муродифот ва намунаҳо барои ҳазораҳо калима аст. Шумо метавонед калимаҳоро ҷустуҷу кунед, то маъноҳои онҳоро омӯзед.",
-  "default":
+  default:
     "Афсӯс, ман наметавонистам фахм кунам. Лутфан саволи худро дубора ҳол кунед ё аз менюи асосӣ истифода баред.",
 };
 
@@ -65,8 +65,7 @@ export default function AIAssistantPage() {
     // Simulate AI response delay
     setTimeout(() => {
       const normalizedInput = inputValue.trim().toLowerCase();
-      const response =
-        AI_RESPONSES[normalizedInput] || AI_RESPONSES["default"];
+      const response = AI_RESPONSES[normalizedInput] || AI_RESPONSES["default"];
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         type: "assistant",

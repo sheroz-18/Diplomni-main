@@ -884,7 +884,7 @@ const mockTranslations: Record<string, Record<string, string>> = {
 function translateWithMock(
   text: string,
   sourceLang: string,
-  targetLang: string
+  targetLang: string,
 ): string {
   if (sourceLang === targetLang) {
     return text;

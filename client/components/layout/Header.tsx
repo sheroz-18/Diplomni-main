@@ -14,7 +14,10 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center hover:opacity-80 transition">
+          <Link
+            to="/"
+            className="flex items-center hover:opacity-80 transition"
+          >
             <img
               src="/logo.svg"
               alt="Тарҷумаи Тоҷикӣ"
