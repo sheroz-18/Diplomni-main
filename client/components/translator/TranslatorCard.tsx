@@ -13,7 +13,7 @@ import { Loader2, Copy, Volume2 } from "lucide-react";
 
 const LANGUAGES = [
   { code: "en", name: "English", nativeName: "English" },
-  { code: "tg", name: "Tajik", nativeName: "Тоҷикӣ" },
+  { code: "tj", name: "Tajik", nativeName: "Тоҷикӣ" },
   { code: "ru", name: "Russian", nativeName: "Русский" },
   { code: "fr", name: "French", nativeName: "Français" },
   { code: "es", name: "Spanish", nativeName: "Español" },
@@ -28,7 +28,7 @@ export default function TranslatorCard() {
   const [sourceText, setSourceText] = useState("");
   const [translatedText, setTranslatedText] = useState("");
   const [sourceLang, setSourceLang] = useState("en");
-  const [targetLang, setTargetLang] = useState("tg");
+  const [targetLang, setTargetLang] = useState("tj");
   const [isLoading, setIsLoading] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -74,7 +74,7 @@ export default function TranslatorCard() {
 
   const handleSpeak = (text: string) => {
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = targetLang === "tg" ? "fa" : targetLang;
+    utterance.lang = targetLang === "tj" ? "fa" : targetLang;
     window.speechSynthesis.speak(utterance);
   };
 
