@@ -4,7 +4,8 @@ import { TranslationResponse } from "@shared/api";
 // Language code mapping for LibreTranslate
 const languageMap: Record<string, string> = {
   en: "en",
-  tg: "tg", // Tajik
+  tj: "fa", // Tajik maps to Persian/Farsi for LibreTranslate
+  tg: "fa", // Also support legacy code
   ru: "ru",
   fr: "fr",
   es: "es",
