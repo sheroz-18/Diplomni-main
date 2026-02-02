@@ -184,7 +184,7 @@ export default function Index() {
               </ul>
             </div>
             <div>
-              <h3 className="text-white font-bold mb-4">Aloqa</h3>
+              <h3 className="text-white font-bold mb-4">Алоқа</h3>
               <p className="text-sm">
                 Саволҳо ё пешниҳодаткуҳод?
                 <br />
