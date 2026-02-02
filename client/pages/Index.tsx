@@ -7,22 +7,81 @@ export default function Index() {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-4 md:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Тарҷумаи Тоҷикӣ
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-8">
-            Тарҷумаи фавритавӣ, луғати ҷомеъ ва ёрии ҳушманд
-          </p>
-          <Link
-            to="/translator"
-            className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition"
-          >
-            Оғоз кунед
-            <ArrowRight size={20} />
-          </Link>
+      {/* Hero Section with Banner */}
+      <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white py-12 md:py-20 overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute top-0 left-0 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-10 -translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-10 translate-x-1/2 translate-y-1/2" />
+
+        <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* Left side - Text Content */}
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                Тарҷумаи Тоҷикӣ
+              </h1>
+              <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
+                Тарҷумаи фавритавӣ, луғати ҷомеъ ва ёрии ҳушманд барои забони
+                тоҷикӣ
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <Link
+                  to="/translator"
+                  className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition transform hover:scale-105"
+                >
+                  Оғоз кунед
+                  <ArrowRight size={20} />
+                </Link>
+                <Link
+                  to="/dictionary"
+                  className="inline-flex items-center justify-center gap-2 bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 transition transform hover:scale-105"
+                >
+                  Луғат
+                  <BookOpen size={20} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right side - Banner Illustration */}
+            <div className="hidden md:flex items-center justify-center">
+              <div className="relative">
+                {/* Main banner box */}
+                <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-8 border border-white border-opacity-20 shadow-2xl">
+                  {/* Icon circles */}
+                  <div className="flex justify-around mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition">
+                      <Languages className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition">
+                      <BookOpen className="w-8 h-8 text-white" />
+                    </div>
+                    <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition">
+                      <Brain className="w-8 h-8 text-white" />
+                    </div>
+                  </div>
+
+                  {/* Text in banner */}
+                  <div className="text-center">
+                    <p className="text-sm text-blue-100 mb-2">Дастрас барои</p>
+                    <p className="text-2xl font-bold text-white mb-3">
+                      10+ забон
+                    </p>
+                    <div className="w-32 h-1 bg-gradient-to-r from-purple-400 via-pink-400 to-green-400 rounded-full mx-auto" />
+                  </div>
+                </div>
+
+                {/* Floating elements */}
+                <div
+                  className="absolute -top-4 -right-4 w-20 h-20 bg-purple-400 rounded-lg opacity-20 animate-bounce"
+                  style={{ animationDelay: "0s" }}
+                />
+                <div
+                  className="absolute -bottom-4 -left-4 w-16 h-16 bg-pink-400 rounded-full opacity-20 animate-bounce"
+                  style={{ animationDelay: "0.5s" }}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -100,29 +159,31 @@ export default function Index() {
       <section className="bg-gray-100 py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-            چرا ما را انتخاب کنید؟
+            Чаро мо интихоб кунед?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">۱۰+</div>
-              <p className="text-gray-700 font-medium">زبان پشتیبانی‌شده</p>
+              <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
+              <p className="text-gray-700 font-medium">
+                Забонҳои пуштибонишуда
+              </p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">۱۰۰%</div>
-              <p className="text-gray-700 font-medium">رایگان و بدون تبلیغ</p>
+              <div className="text-4xl font-bold text-green-600 mb-2">100%</div>
+              <p className="text-gray-700 font-medium">Озод ва бе иштиҳорот</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-purple-600 mb-2">
-                فوری
+                Фавран
               </div>
-              <p className="text-gray-700 font-medium">ترجمه لحظه‌ای</p>
+              <p className="text-gray-700 font-medium">Тарҷумаи ғайрифоран</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-orange-600 mb-2">
-                ۲۴/۷
+                24/7
               </div>
-              <p className="text-gray-700 font-medium">در دسترس همیشه</p>
+              <p className="text-gray-700 font-medium">Дастрас аз ҳама вақт</p>
             </div>
           </div>
         </div>
@@ -132,16 +193,16 @@ export default function Index() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            آماده‌اید شروع کنید؟
+            Оғоз кардан доред?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            ترجمه، یادگیری و کشف کنید. همه چیز رایگان است.
+            Тарҷума кунед, фарозед ва кашф кунед. Ҳамаи чизҳо озод аст.
           </p>
           <Link
             to="/translator"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-10 py-4 rounded-lg font-semibold hover:bg-blue-50 transition text-lg"
           >
-            بروید به ترجمه کار
+            Ба тарҷума равед
             <ArrowRight size={24} />
           </Link>
         </div>
@@ -152,21 +213,21 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-white font-bold mb-4">درباره ما</h3>
+              <h3 className="text-white font-bold mb-4">Оид ба мо</h3>
               <p className="text-sm">
-                ترجمه تاجیک یک پلتفرم ترجمه و یادگیری زبان سریع و آسان است که
-                برای تمام جهت‌داران تاجیکی ساخته شده است.
+                Тарҷумаи Тоҷикӣ як платформаи тарҷума ва омӯзиши забони тез ва
+                осон аст, ки барои ҳамаи дӯстдоронидагони тоҷик сохта шудааст.
               </p>
             </div>
             <div>
-              <h3 className="text-white font-bold mb-4">لینک‌ها</h3>
+              <h3 className="text-white font-bold mb-4">Пайвандҳо</h3>
               <ul className="text-sm space-y-2">
                 <li>
                   <Link
                     to="/translator"
                     className="hover:text-white transition"
                   >
-                    ترجمه کن
+                    Тарҷума кун
                   </Link>
                 </li>
                 <li>
@@ -174,28 +235,28 @@ export default function Index() {
                     to="/dictionary"
                     className="hover:text-white transition"
                   >
-                    فرهنگ لغت
+                    Луғат
                   </Link>
                 </li>
                 <li>
                   <Link to="/ai" className="hover:text-white transition">
-                    دستیار هوشمند
+                    Ёрии ҳушманд
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-white font-bold mb-4">تماس</h3>
+              <h3 className="text-white font-bold mb-4">Алоқа</h3>
               <p className="text-sm">
-                سوالات یا پیشنهادات دارید؟
+                Саволҳо ё пешниҳодаткуҳод?
                 <br />
-                با ما تماس بگیرید
+                Бо мо алоқа барқарор кунед
               </p>
             </div>
           </div>
 
           <div className="border-t border-gray-700 pt-8 text-center text-sm">
-            <p>&copy; 2024 ترجمه تاجیکی. تمام حقوق محفوظ است.</p>
+            <p>&copy; 2024 Тарҷумаи Тоҷикӣ. Ҳамаи ҳуқуқҳо маҳфуз аст.</p>
           </div>
         </div>
       </footer>

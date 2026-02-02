@@ -14,18 +14,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center text-white font-bold text-lg">
-              Т
-            </div>
-            <div>
-              <h1 className="text-xl md:text-2xl font-bold text-gray-900">
-                Тарҷумаи Тоҷикӣ
-              </h1>
-              <p className="text-xs text-gray-500">
-                Tajik Translator & Dictionary
-              </p>
-            </div>
+          <Link
+            to="/"
+            className="flex items-center hover:opacity-80 transition"
+          >
+            <img
+              src="/logo.svg"
+              alt="Тарҷумаи Тоҷикӣ"
+              className="h-16 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

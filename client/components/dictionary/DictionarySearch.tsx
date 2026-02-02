@@ -12,7 +12,7 @@ import { DictionaryResponse } from "@shared/api";
 import { Loader2, Search } from "lucide-react";
 
 const DICTIONARY_LANGUAGES = [
-  { code: "tg", name: "Tajik", nativeName: "Тоҷикӣ" },
+  { code: "tj", name: "Tajik", nativeName: "Тоҷикӣ" },
   { code: "en", name: "English", nativeName: "English" },
   { code: "ru", name: "Russian", nativeName: "Русский" },
 ];
