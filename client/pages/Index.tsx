@@ -100,29 +100,29 @@ export default function Index() {
       <section className="bg-gray-100 py-16 md:py-24">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">
-            چرا ما را انتخاب کنید؟
+            Чаро мо интихоб кунед?
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">۱۰+</div>
-              <p className="text-gray-700 font-medium">زبان پشتیبانی‌شده</p>
+              <div className="text-4xl font-bold text-blue-600 mb-2">10+</div>
+              <p className="text-gray-700 font-medium">Забонҳои пуштибонишуда</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">۱۰۰%</div>
-              <p className="text-gray-700 font-medium">رایگان و بدون تبلیغ</p>
+              <div className="text-4xl font-bold text-green-600 mb-2">100%</div>
+              <p className="text-gray-700 font-medium">Озод ва бе иштиҳорот</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-purple-600 mb-2">
-                فوری
+                Фавран
               </div>
-              <p className="text-gray-700 font-medium">ترجمه لحظه‌ای</p>
+              <p className="text-gray-700 font-medium">Тарҷумаи ғайрифоран</p>
             </div>
             <div className="bg-white rounded-lg p-6 shadow text-center">
               <div className="text-4xl font-bold text-orange-600 mb-2">
-                ۲۴/۷
+                24/7
               </div>
-              <p className="text-gray-700 font-medium">در دسترس همیشه</p>
+              <p className="text-gray-700 font-medium">Дастрас аз ҳама вақт</p>
             </div>
           </div>
         </div>
@@ -132,16 +132,16 @@ export default function Index() {
       <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            آماده‌اید شروع کنید؟
+            Оғоз кардан доред?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            ترجمه، یادگیری و کشف کنید. همه چیز رایگان است.
+            Тарҷума кунед, фарозед ва кашф кунед. Ҳамаи чизҳо озод аст.
           </p>
           <Link
             to="/translator"
             className="inline-flex items-center gap-2 bg-white text-blue-600 px-10 py-4 rounded-lg font-semibold hover:bg-blue-50 transition text-lg"
           >
-            بروید به ترجمه کار
+            Ба тарҷума равед
             <ArrowRight size={24} />
           </Link>
         </div>
@@ -152,21 +152,20 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h3 className="text-white font-bold mb-4">درباره ما</h3>
+              <h3 className="text-white font-bold mb-4">Оид ба мо</h3>
               <p className="text-sm">
-                ترجمه تاجیک یک پلتفرم ترجمه و یادگیری زبان سریع و آسان است که
-                برای تمام جهت‌داران تاجیکی ساخته شده است.
+                Тарҷумаи Тоҷикӣ як платформаи тарҷума ва омӯзиши забони тез ва осон аст, ки барои ҳамаи дӯстдоронидагони тоҷик сохта шудааст.
               </p>
             </div>
             <div>
-              <h3 className="text-white font-bold mb-4">لینک‌ها</h3>
+              <h3 className="text-white font-bold mb-4">Пайвандҳо</h3>
               <ul className="text-sm space-y-2">
                 <li>
                   <Link
                     to="/translator"
                     className="hover:text-white transition"
                   >
-                    ترجمه کن
+                    Тарҷума кун
                   </Link>
                 </li>
                 <li>
@@ -174,28 +173,28 @@ export default function Index() {
                     to="/dictionary"
                     className="hover:text-white transition"
                   >
-                    فرهنگ لغت
+                    Луғат
                   </Link>
                 </li>
                 <li>
                   <Link to="/ai" className="hover:text-white transition">
-                    دستیار هوشمند
+                    Ёрии ҳушманд
                   </Link>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-white font-bold mb-4">تماس</h3>
+              <h3 className="text-white font-bold mb-4">Aloqa</h3>
               <p className="text-sm">
-                سوالات یا پیشنهادات دارید؟
+                Саволҳо ё пешниҳодаткуҳод?
                 <br />
-                با ما تماس بگیرید
+                Бо мо алоқа барқарор кунед
               </p>
             </div>
           </div>
 
           <div className="border-t border-gray-700 pt-8 text-center text-sm">
-            <p>&copy; 2024 ترجمه تاجیکی. تمام حقوق محفوظ است.</p>
+            <p>&copy; 2024 Тарҷумаи Тоҷикӣ. Ҳамаи ҳуқуқҳо маҳфуз аст.</p>
           </div>
         </div>
       </footer>
